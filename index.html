@@ -1,46 +1,12 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pengumuman SNBP 2026</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="bg-animation">
-        <div class="blob"></div>
-        <div class="blob-2"></div>
-    </div>
-
-    <div class="container" id="main-card">
-        <div class="glass-card fade-in" id="input-form">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Logotype_Satu_Data_Indonesia.png/640px-Logotype_Satu_Data_Indonesia.png" alt="Logo" class="logo">
-            <h2>Cek Hasil Seleksi SNBP</h2>
-            <p>Masukkan nomor pendaftaran untuk melihat hasil.</p>
-            
-            <div class="input-group">
-                <input type="number" id="nomor" placeholder="Nomor Peserta (10 Digit)">
-                <input type="text" id="nama" placeholder="Nama Lengkap">
-            </div>
-
-            <div class="button-group">
-                <button onclick="proses(true)" class="btn-lulus">Cek Lulus</button>
-                <button onclick="proses(false)" class="btn-gagal">Cek Tidak Lulus</button>
-            </div>
-        </div>
-
-        <div class="glass-card hidden" id="result-card">
-            <div id="status-header"></div>
-            <div class="result-content">
-                <p>Nama: <strong id="res-nama"></strong></p>
-                <p>Nomor Peserta: <strong id="res-nomor"></strong></p>
-                <p id="res-detail"></p>
-            </div>
-            <button onclick="location.reload()" class="btn-back">Kembali</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SNBP Checker</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
